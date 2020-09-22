@@ -1,0 +1,31 @@
+
+.summary{
+    width: 90%;
+    height: 60px;
+    z-index: 1;
+    color:white;
+    background-color: green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+}
+
+.deleteAll{
+    width: 20%;
+    align-self: center;
+    padding:2%;
+    color: rgb(60, 92, 12);
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 3px;
+    height: 30px;
+}
+
+/* .sticky {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+  } */

@@ -1,0 +1,36 @@
+/* Search */
+.search{
+  width: 40%;
+  height: 30px;
+}
+/* ----------------------- */
+/* Style the navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+  }
+.logo{
+    width: 160px;
+    height:45px;
+}
+  
+  /* Navbar links */
+  .navbar p {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  

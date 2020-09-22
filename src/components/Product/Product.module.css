@@ -1,0 +1,60 @@
+.product{
+    flex-basis: 29%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 6px;
+    padding:10px;
+}
+.product .img{
+    /* margin: 5% 5% 5% 3%; */
+    flex-basis: 70%;
+    /* background-color:chartreuse; */
+}
+.img img{
+    width: 70%;
+    height: 150px;
+}
+.price, .pName{
+    align-self: start;
+}
+.addBtn{
+    width: 60%;
+    align-self: center;
+    padding:2%;
+    color: rgb(60, 92, 12);
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 3px;
+}
+.addBtn:focus, .addBtn:hover{
+    cursor: pointer;
+    outline: none;
+}
+.addBtnSm{
+    width: 30%;
+    align-self: center;
+    padding:2%;
+    color:white;
+    border: 2px solid white;
+    background-color: rgb(60, 92, 12);
+    border-radius: 3px;
+}
+.delBtnSm{
+    width: 30%;
+    align-self: center;
+    padding:2%;
+    color:white;
+    border: 2px solid white;
+    background-color: rgb(150, 53, 23);
+    border-radius: 3px;
+}
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
