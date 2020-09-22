@@ -23,8 +23,7 @@ export class CatalogPage extends Component {
                     Data.data.responseData.productList.forEach(function(product){
                         priceMap[product.skuCode]=product.sellingPrice;
                     });
-                    this.handleChange = this.handleChange.bind(this);
-
+                    this.handleSearch = this.handleSearch.bind(this);
                 }
                 getPreviousState(){
                     return JSON.parse(localStorage.getItem('state'));
@@ -89,7 +88,7 @@ export class CatalogPage extends Component {
                             />
         });
     }
-    handleChange(event){
+    handleSearch(event){
         let value = event.target.value;
         value = value.toLowerCase();
         let updatedState = this.state;
@@ -121,7 +120,7 @@ export class CatalogPage extends Component {
     render() {
         return (
             <div>
-                <Navbar search={(event)=>this.handleChange(event)}></Navbar>
+                <Navbar search={(event)=>this.handleSearch(event)}></Navbar>
                 <div className={styles.catalog}>
                     {this.renderProductList()}
                 </div>
